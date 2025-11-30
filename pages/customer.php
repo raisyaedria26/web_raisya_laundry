@@ -48,8 +48,8 @@ if (isset($_GET['delete'])) {
                 <td><?php echo $value['phone'] ?></td>
                 <td><?php echo $value['address'] ?></td>
                 <td>
-                  <a class="btn btn-success btn-sm" href="?page=tambah-customer&edit=<?php echo $value['id'] ?>"><i class="bi bi-pencil"></i></a>
-                  <a class="btn btn-danger btn-sm" onclick="return confirm('Apakah anda yakin akan menghapus data ini?')"
+                  <a class="btn btn-outline-warning btn-sm" href="?page=tambah-customer&edit=<?php echo $value['id'] ?>"><i class="bi bi-pencil"></i></a>
+                  <a class="btn btn-outline-danger btn-sm" onclick="return confirm('Apakah anda yakin akan menghapus data ini?')"
                     href="?page=customer&delete=<?php echo $value['id'] ?>">
                     <i class="bi bi-trash"></i>
                   </a>

@@ -36,8 +36,8 @@
       <div class="col-sm-12">
         <div class="card">
           <div class="card-header">
-            <h3 class="card-title">Data Order</h3>
-            <button class="btn btn-primary d-print-none"  onclick="window.print()" ><i class="bi bi-printer"></i> Print report</button>
+            <h3 class="card-title">Data Report</h3>
+            <button class="btn btn-primary d-print-none"  onclick="window.print()" ><i class="bi bi-printer"></i> Print Report</button>
           </div>
           <div class="card-body">
             <table class="table table-bordered table-striped">
@@ -77,10 +77,10 @@
                   <td class="d-print-none">
                     <a href="?page=tambah-report&edit=<?php echo $value['id'] ?>" class="btn btn-warning btn-sm"> 
                       <i class="bi bi-pencil"></i>
-                      Edit</a>
+                      </a>
                     <a href="?page=report&delete=<?php echo $value['id'] ?>" class="btn btn-danger btn-sm" onclick="return confirm('Apakah anda yakin akan menghapus')">
                       <i class="bi bi-trash"></i>
-                      Delete</a>
+                      </a>
                   </td>
                 </tr>
                 <?php

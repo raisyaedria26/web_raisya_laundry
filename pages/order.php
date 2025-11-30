@@ -58,12 +58,12 @@
                   <td>Rp <?php echo number_format($value['order_change']) ?></td>
                   <td class="text-center"><?php echo $value['order_status'] == 0 ? '<span class="badge text-bg-warning fs-6">onProcess</span>' : '<span class="badge text-bg-success fs-6">Done</span>' ?></td>
                   <td>
-                    <a href="pos/print.php?id=<?php echo $value['id'] ?>" class="btn btn-success btn-sm"> 
+                    <a href="pos/print.php?id=<?php echo $value['id'] ?>" class="btn btn-warning btn-sm"> 
                       <i class="bi bi-printer"></i>
-                      Print</a>
+                      </a>
                     <a href="?page=order&delete=<?php echo $value['id'] ?>" class="btn btn-danger btn-sm" onclick="return confirm('Apakah anda yakin akan menghapus')">
                       <i class="bi bi-trash"></i>
-                      Delete</a>
+                      </a>
                   </td>
 
 

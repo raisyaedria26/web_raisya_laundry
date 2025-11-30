@@ -46,7 +46,7 @@ $allowed_role = false;
 $extraAccess = [
   3 => ['tambah-report'], // 3 = Pimpinan
   // kalau mau admin juga punya akses khusus lain:
-  // 1 => ['add-role-menu', 'tambah-report'],
+  1 => ['add-role-menu', 'tambah-report', 'tambah-customer', 'tambah-service', 'tambah-menu', 'tambah-user', 'tax'], // 1 = Admin
 ];
 
 if (isset($extraAccess[$level_id]) && in_array($currentPage, $extraAccess[$level_id])) {

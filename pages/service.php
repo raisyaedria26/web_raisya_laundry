@@ -25,7 +25,7 @@
       <div class="col-sm-12">
         <div class="card">
           <div class="card-header">
-            <h3 class="card-title">Data Services</h3>
+            <h3 class="card-title">Data Services <i class="bi bi-stars"></i></h3>
           </div>
           <div class="card-body">
             <div class="d-flex justify-content-end p-2">
@@ -48,10 +48,10 @@
                   <td><?php echo "Rp." . number_format($value['price'], 2, ",", ".") ?></td>
                   <td><?php echo $value['description'] ?></td>
                   <td>
-                    <a href="?page=tambah-service&edit= <?= $value['id'] ?>" class="btn btn-primary btn-sm">
+                    <a href="?page=tambah-service&edit= <?= $value['id'] ?>" class="btn btn-outline-warning btn-sm">
                       <i class="bi bi-pencil"></i>
                     </a>
-                    <a href="?page=service&delete=<?= $value['id'] ?>" class="btn btn-danger btn-sm" onclick="return confirm('Ingin delete?')">
+                    <a href="?page=service&delete=<?= $value['id'] ?>" class="btn btn-outline-danger btn-sm" onclick="return confirm('Ingin delete?')">
                       <i class="bi bi-trash"></i>
                     </a>
                   </td>

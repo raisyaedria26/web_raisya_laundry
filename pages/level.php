@@ -29,7 +29,7 @@ if (isset($_GET['delete'])) {
         </div>
         <div class="card-body">
           <div class="d-flex justify-content-end m-3">
-            <a href="?page=tambah-level" class="btn btn-primary">Add Levels</a>
+            <a href="?page=tambah-level" class="btn btn-primary"><i class="bi bi-plus-circle"></i> Add Level</a>
           </div>
           <table class="table table-bordered table-striped">
             <tr>
@@ -44,13 +44,13 @@ if (isset($_GET['delete'])) {
                 <td><?php echo $key + 1 ?></td>
                 <td><?php echo $level['name'] ?></td>
                 <td class="d-flex gap-2">
-                  <a class="btn btn-warning" href="?page=add-role-menu&edit=<?php echo $level['id'] ?>"><i class="bi bi-plus"></i></a>
+                  <a class="btn btn-outline-secondary" href="?page=add-role-menu&edit=<?php echo $level['id'] ?>"><i class="bi bi-plus"></i></a>
 
-                  <a class="btn btn-primary" href="?page=tambah-level&edit=<?php echo $level['id'] ?>"><i class="bi bi-pencil"></i></a>
+                  <a class="btn btn-outline-warning" href="?page=tambah-level&edit=<?php echo $level['id'] ?>"><i class="bi bi-pencil"></i></a>
 
                   
                   <form action="?page=level&delete=<?php echo $level['id'] ?>" method="post" onclick="return confirm('Apakah ingin di hapus?')">
-                    <button class="btn btn-danger" type="submit"><i class="bi bi-trash"></i></button>
+                    <button class="btn btn-outline-danger" type="submit"><i class="bi bi-trash"></i></button>
                   </form>
                 </td>
               </tr>
