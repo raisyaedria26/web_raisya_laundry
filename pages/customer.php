@@ -12,10 +12,10 @@ $customers = mysqli_fetch_all($query, MYSQLI_ASSOC);
 // $_GET 
 // isset, empty
 if (isset($_GET['delete'])) {
-    $id = $_GET['delete'];
-    $delete = mysqli_query($config, "DELETE FROM customers WHERE id = $id");
-    // redirect
-    header("location:?page=customer&hapus=berhasil");
+  $id = $_GET['delete'];
+  $delete = mysqli_query($config, "DELETE FROM customers WHERE id = $id");
+  // redirect
+  header("location:?page=customer&hapus=berhasil");
 }
 ?>
 
@@ -23,7 +23,7 @@ if (isset($_GET['delete'])) {
   <div class="col-sm-12">
     <div class="card">
       <div class="card-body">
-        <h3 class="card-title">Data Customer</h3>
+        <h3 class="card-title">Data Customer <i class="bi bi-people-fill"></i></h3>
         <div class="mb-3" align="right">
           <a href="?page=tambah-customer" class="btn btn-primary">
             <i class="bi bi-plus-circle"></i> Add Customer
@@ -48,10 +48,10 @@ if (isset($_GET['delete'])) {
                 <td><?php echo $value['phone'] ?></td>
                 <td><?php echo $value['address'] ?></td>
                 <td>
-                  <a class="btn btn-outline-warning btn-sm" href="?page=tambah-customer&edit=<?php echo $value['id'] ?>"><i class="bi bi-pencil"></i></a>
+                  <a class="btn btn-outline-warning btn-sm" href="?page=tambah-customer&edit=<?php echo $value['id'] ?>"><i class="bi bi-pencil-fill"></i></a>
                   <a class="btn btn-outline-danger btn-sm" onclick="return confirm('Apakah anda yakin akan menghapus data ini?')"
                     href="?page=customer&delete=<?php echo $value['id'] ?>">
-                    <i class="bi bi-trash"></i>
+                    <i class="bi bi-trash-fill"></i>
                   </a>
                 </td>
               </tr>

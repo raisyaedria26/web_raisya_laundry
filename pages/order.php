@@ -27,7 +27,7 @@
       <div class="col-sm-12">
         <div class="card">
           <div class="card-header">
-            <h3 class="card-title">Data Order</h3>
+            <h3 class="card-title">Data Order <i class="bi bi-list-ul"></i></h3>
           </div>
           <div class="card-body">
             <div class="d-flex justify-content-end p-2">
@@ -50,7 +50,7 @@
               ?>
                 <tr>
                   <td><?php echo $key + 1 ?></td>
-                  <td><?php echo $value ['order_code'] ?></td>
+                  <td><?php echo $value['order_code'] ?></td>
                   <td><?php echo $value['order_end_date'] ?></td>
                   <td>Rp <?php echo number_format($value['order_total']) ?></td>
                   <td>Rp <?php echo number_format($value['order_tax']) ?></td>
@@ -58,12 +58,12 @@
                   <td>Rp <?php echo number_format($value['order_change']) ?></td>
                   <td class="text-center"><?php echo $value['order_status'] == 0 ? '<span class="badge text-bg-warning fs-6">onProcess</span>' : '<span class="badge text-bg-success fs-6">Done</span>' ?></td>
                   <td>
-                    <a href="pos/print.php?id=<?php echo $value['id'] ?>" class="btn btn-warning btn-sm"> 
-                      <i class="bi bi-printer"></i>
-                      </a>
-                    <a href="?page=order&delete=<?php echo $value['id'] ?>" class="btn btn-danger btn-sm" onclick="return confirm('Apakah anda yakin akan menghapus')">
-                      <i class="bi bi-trash"></i>
-                      </a>
+                    <a href="pos/print.php?id=<?php echo $value['id'] ?>" class="btn btn-outline-warning btn-sm">
+                      <i class="bi bi-printer-fill"></i>
+                    </a>
+                    <a href="?page=order&delete=<?php echo $value['id'] ?>" class="btn btn-outline-danger btn-sm" onclick="return confirm('Apakah anda yakin akan menghapus')">
+                      <i class="bi bi-trash-fill"></i>
+                    </a>
                   </td>
 
 

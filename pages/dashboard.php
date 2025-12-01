@@ -24,7 +24,7 @@ $totalIncome = mysqli_fetch_assoc($queryIncome)['income'];
                     <div class="col-sm-7">
                         <div class="card-body">
                             <h5 class="card-title text-primary">Ni Hao <?= $user ?>! 🎉</h5>
-                            <p class="mb-4">Selamat Datang di Webisite!</p>
+                            <p class="mb-4">Selamat Datang di Webisite Laundry Raisya!</p>
                         </div>
                     </div>
                     <div class="col-sm-5 text-center text-sm-left">
@@ -55,7 +55,7 @@ $totalIncome = mysqli_fetch_assoc($queryIncome)['income'];
                             </div>
                         </div>
                     </div>
-                    <span class="fw-semibold d-block mb-1 text-center">Services</span>
+                    <span class="fw-semibold d-block mb-1 text-center"><i class="bi bi-emoji-laughing"></i> Services</span>
                     <h3 class="card-title mb-2 text-center"><?= $totalServices ?></h3>
                 </div>
             </div>
@@ -78,7 +78,7 @@ $totalIncome = mysqli_fetch_assoc($queryIncome)['income'];
                             </div>
                         </div>
                     </div>
-                    <span class="fw-semibold d-block mb-1 text-center">Customers</span>
+                    <span class="fw-semibold d-block mb-1 text-center"><i class="bi bi-person-vcard"></i> Customers</span>
                     <h3 class="card-title text-nowrap mb-2 text-center"><?= $totalCustomer ?></h3>
                 </div>
             </div>
@@ -97,7 +97,7 @@ $totalIncome = mysqli_fetch_assoc($queryIncome)['income'];
                             </button>
                         </div>
                     </div>
-                    <span class="d-block fw-semibold mb-1 text-center">Income</span>
+                    <span class="d-block fw-semibold mb-1 text-center"><i class="bi bi-cash-coin"></i> Income</span>
                     <h3 class="card-title text-nowrap mb-2 text-center">Rp <?= number_format($totalIncome, 0, ',', '.') ?></h3>
                 </div>
             </div>
@@ -116,7 +116,7 @@ $totalIncome = mysqli_fetch_assoc($queryIncome)['income'];
                             </button>
                         </div>
                     </div>
-                    <span class="fw-semibold d-block mb-1 text-center">Total Transaction</span>
+                    <span class="fw-semibold d-block mb-1 text-center"><i class="bi bi-clipboard2-check"></i> Total Transaction</span>
                     <h3 class="card-title mb-2 text-center"><?= $totalTransaction ?></h3>
                 </div>
             </div>

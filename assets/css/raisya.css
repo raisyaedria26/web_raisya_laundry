@@ -32,8 +32,8 @@ body {
 
 .card-body {
   background-color: #99d1ff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.10), 
-              0 4px 16px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10),
+    0 4px 16px rgba(0, 0, 0, 0.05);
 
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -89,7 +89,7 @@ body {
   background-color: #BBDEFB;
   color: black;
   box-shadow: 0 0 3px #e5e5e5;
-  border: 1px solid #77BEF0 ;
+  border: 1px solid #77BEF0;
   padding: 20px;
   border-radius: 1rem;
 }
@@ -132,15 +132,15 @@ body {
 }
 
 .modal-content {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    color: var(--bs-modal-color);
-    pointer-events: auto;
-    background-color: var(--bs-modal-bg);
-    background-clip: padding-box;
-    border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
-    border-radius: var(--bs-modal-border-radius);
-    outline: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: var(--bs-modal-color);
+  pointer-events: auto;
+  background-color: var(--bs-modal-bg);
+  background-clip: padding-box;
+  border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
+  border-radius: var(--bs-modal-border-radius);
+  outline: 0;
 }

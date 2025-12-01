@@ -29,7 +29,7 @@
           </div>
           <div class="card-body">
             <div class="d-flex justify-content-end p-2">
-              <a href="?page=tambah-service" class="btn btn-primary"> <i class="bi bi-plus-circle"></i> Tambah</a>
+              <a href="?page=tambah-service" class="btn btn-primary"> <i class="bi bi-plus-circle"></i> Add Service</a>
             </div>
             <table class="table table-bordered table-striped">
               <tr>
@@ -49,10 +49,10 @@
                   <td><?php echo $value['description'] ?></td>
                   <td>
                     <a href="?page=tambah-service&edit= <?= $value['id'] ?>" class="btn btn-outline-warning btn-sm">
-                      <i class="bi bi-pencil"></i>
+                      <i class="bi bi-pencil-fill"></i>
                     </a>
                     <a href="?page=service&delete=<?= $value['id'] ?>" class="btn btn-outline-danger btn-sm" onclick="return confirm('Ingin delete?')">
-                      <i class="bi bi-trash"></i>
+                      <i class="bi bi-trash-fill"></i>
                     </a>
                   </td>
 

@@ -25,7 +25,7 @@ if (isset($_GET['delete'])) {
     <div class="col-sm-12">
       <div class="card">
         <div class="card-header">
-          <h1 class="card-title">Data Menu</h1>
+          <h1 class="card-title">Data Menu <i class="bi bi-card-checklist"></i></h1>
         </div>
         <div class="card-body">
           <div class="d-flex justify-content-end m-3">
@@ -50,10 +50,10 @@ if (isset($_GET['delete'])) {
                 <td><?php echo $menu['link'] ?></td>
                 <td><?php echo $menu['orders'] ?></td>
                 <td class="d-flex gap-2">
-                  <a class="btn btn-outline-warning" href="?page=tambah-menu&edit=<?php echo $menu['id'] ?>"><i class="bi bi-pencil"></i></a>
+                  <a class="btn btn-outline-warning" href="?page=tambah-menu&edit=<?php echo $menu['id'] ?>"><i class="bi bi-pencil-fill"></i></a>
 
                   <form action="?page=menu&delete=<?php echo $menu['id'] ?>" method="post" onclick="return confirm('Apakah ingin di hapus?')">
-                    <button class="btn btn-outline-danger" type="submit"><i class="bi bi-trash"></i></button>
+                    <button class="btn btn-outline-danger" type="submit"><i class="bi bi-trash-fill"></i></button>
                   </form>
                 </td>
               </tr>

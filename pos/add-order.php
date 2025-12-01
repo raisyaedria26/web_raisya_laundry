@@ -94,7 +94,7 @@ $order_code = "ORD-" . date('dmY') . str_pad($nextId, 4, "0", STR_PAD_LEFT);
   <title>Laundry PPKD | JP</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <link rel="stylesheet" href="../assets/css/aldo.css">
+  <link rel="stylesheet" href="../assets/css/raisya.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
 </head>
@@ -115,19 +115,19 @@ $order_code = "ORD-" . date('dmY') . str_pad($nextId, 4, "0", STR_PAD_LEFT);
                 <label for="" class="form-label">
                   Customer Name
                 </label>
-                <select name="customer_id" id="customer_id" 
-                class="form-control" onchange="selectCustomers()" style="border-radius: 12px; background-color: #e3f2fd;">
+                <select name="customer_id" id="customer_id"
+                  class="form-control" onchange="selectCustomers()" style="border-radius: 12px; background-color: #e3f2fd;">
                   <option value="">Select One</option>
-                  <?php foreach($rowCustomers as $customer): ?>
-                  <option data-phone="<?php echo $customer['phone'] ?>" 
-                  value="<?php echo $customer['id'] ?>">
-                    <?php echo $customer['name'] ?>
-                  </option>
+                  <?php foreach ($rowCustomers as $customer): ?>
+                    <option data-phone="<?php echo $customer['phone'] ?>"
+                      value="<?php echo $customer['id'] ?>">
+                      <?php echo $customer['name'] ?>
+                    </option>
                   <?php endforeach ?>
                 </select>
               </div>
               <div class="col-md-6">
-                <label for="" class="form-label" >
+                <label for="" class="form-label">
                   Phone Number
                 </label>
                 <input type="text" class="form-control" style="border-radius: 12px; background-color: #e3f2fd;"
@@ -149,17 +149,17 @@ $order_code = "ORD-" . date('dmY') . str_pad($nextId, 4, "0", STR_PAD_LEFT);
           </div>
           <div class="card-body">
             <div class="row g-3">
-              <?php foreach($rowServices as $service) : ?>
-              <div class="col-md-4 mb-3">
-                <div class="card service-card" style="border-radius: 12px; padding: 10px;" 
-                onclick="openModal(<?php echo htmlspecialchars(json_encode($service)) ?>)">
+              <?php foreach ($rowServices as $service) : ?>
+                <div class="col-md-4 mb-3">
+                  <div class="card service-card" style="border-radius: 12px; padding: 10px;"
+                    onclick="openModal(<?php echo htmlspecialchars(json_encode($service)) ?>)">
 
-                  <h6><?php echo $service['name'] ?></h6>
-                  <small class="text-muted">Rp. <?php echo $service['price'] ?>  /kg</small>
+                    <h6><?php echo $service['name'] ?></h6>
+                    <small class="text-muted">Rp. <?php echo $service['price'] ?> /kg</small>
+                  </div>
                 </div>
-              </div>
               <?php endforeach ?>
-              
+
             </div>
           </div>
         </div>
@@ -186,13 +186,13 @@ $order_code = "ORD-" . date('dmY') . str_pad($nextId, 4, "0", STR_PAD_LEFT);
                 <div class="mb-3">
                   <label for="" class="form-label">Service Name</label>
                   <input type="text" id="modal_name"
-                  class="form-control" readonly>
+                    class="form-control" readonly>
                 </div>
                 <div class="mb-3">
                   <label for="" class="form-label">Weight / Qty</label>
                   <input type="number" id="modal_qty"
-                  class="form-control" placeholder="Weight / Qty" 
-                  step="0.1" min="0"> 
+                    class="form-control" placeholder="Weight / Qty"
+                    step="0.1" min="0">
                 </div>
 
               </div>
@@ -244,7 +244,7 @@ $order_code = "ORD-" . date('dmY') . str_pad($nextId, 4, "0", STR_PAD_LEFT);
             </div>
             <div class="d-flex justify-content-between mb-2">
               <span>Change :</span>
-              <input type="number" id="change" class="form-control w-50" style="background-color: #BBDEFB;" readonly >
+              <input type="number" id="change" class="form-control w-50" style="background-color: #BBDEFB;" readonly>
             </div>
           </div>
           <div class="row g-2">
@@ -269,7 +269,7 @@ $order_code = "ORD-" . date('dmY') . str_pad($nextId, 4, "0", STR_PAD_LEFT);
     crossorigin="anonymous"></script>
 
 
-  <script src="../assets/js/aldo.js"></script>
+  <script src="../assets/js/raisya.js"></script>
 
 </body>
 

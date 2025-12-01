@@ -13,18 +13,18 @@ $users = mysqli_fetch_all($query, mode: MYSQLI_ASSOC);
 // $_GET 
 // isset, empty
 if (isset($_GET['delete'])) {
-    $id = $_GET['delete'];
-    $delete = mysqli_query($config, "DELETE FROM users WHERE id = $id");
-    // redirect
-    header("location:?page=user&hapus=berhasil");
+  $id = $_GET['delete'];
+  $delete = mysqli_query($config, "DELETE FROM users WHERE id = $id");
+  // redirect
+  header("location:?page=user&hapus=berhasil");
 }
 ?>
- 
+
 <div class="row">
   <div class="col-sm-12">
     <div class="card">
       <div class="card-body">
-        <h3 class="card-title">Data User</h3>
+        <h3 class="card-title">Data User <i class="bi bi-person-badge-fill"></i></h3>
         <div class="mb-3" align="right">
           <a href="?page=tambah-user" class="btn btn-primary">
             <i class="bi bi-plus-circle"></i> Add User
@@ -48,10 +48,10 @@ if (isset($_GET['delete'])) {
                 <td><?php echo $value['name'] ?></td>
                 <td><?php echo $value['email'] ?></td>
                 <td>
-                  <a class="btn btn-outline-warning btn-sm" href="?page=tambah-user&edit=<?php echo $value['id'] ?>"><i class="bi bi-pencil"></i></a>
+                  <a class="btn btn-outline-warning btn-sm" href="?page=tambah-user&edit=<?php echo $value['id'] ?>"><i class="bi bi-pencil-fill"></i></a>
                   <a class="btn btn-outline-danger btn-sm" onclick="return confirm('Apakah anda yakin akan menghapus data ini?')"
                     href="?page=user&delete=<?php echo $value['id'] ?>">
-                    <i class="bi bi-trash"></i>
+                    <i class="bi bi-trash-fill"></i>
                   </a>
                 </td>
               </tr>
